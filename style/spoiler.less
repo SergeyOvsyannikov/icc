@@ -1,0 +1,23 @@
+.spoiler{
+  width: 50%;
+  margin: 100px auto;
+  border: 1px solid black;
+  text-align: center;
+  &[data-state='opened'] &__content{
+  display: block;
+  top: 0;
+  }
+  &__header{
+    font-size: 40px;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+  }
+  &__content{
+    top: -20px;
+    font-size: 20px;
+    border: 1px solid black;
+    display: none;
+    transition: 5s;
+  }
+}

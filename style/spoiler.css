@@ -1,0 +1,24 @@
+.spoiler {
+  width: 50%;
+  margin: 100px auto;
+  border: 1px solid black;
+  text-align: center;
+}
+.spoiler[data-state='opened'] .spoiler__content {
+  display: block;
+  top: 0;
+}
+.spoiler__header {
+  font-size: 40px;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+}
+.spoiler__content {
+  top: -20px;
+  font-size: 20px;
+  border: 1px solid black;
+  display: none;
+  transition: 5s;
+}
+/*# sourceMappingURL=spoiler.css.map */
